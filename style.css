@@ -6,16 +6,12 @@ body {
   background-color: #a81076;
 }
 .calculatorBody {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 400px;
   height: 500px;
 }
 table {
   border-collapse: collapse;
-  background-color: rgb(215 176 187);
+  background-color: #2f3146;
   box-shadow: 11px -7px 52px 0px rgba(110, 154, 228, 0.75);
 }
 td {
@@ -25,11 +21,12 @@ td {
 }
 input[type="button"] {
   width: 90px;
-  height: 80px;
+  height: 90px;
   color: #fff;
-  background-color: rgb(0, 0, 0);
+  background-color: #222232;
   font-size: 2rem;
   border: none;
+  border-radius: 50%;
 
   transition: 0.4s ease-in-out;
 }
@@ -47,6 +44,14 @@ input[type="text"] {
   font-size: 30px;
 }
 #myResult {
-  width: 23rem;
-  height: 9rem;
+  width: 406px;
+  height: 11rem;
+  border-radius: 0%;
+  background: #222232;
+}
+#answer {
+  background: #f1b51d;
+}
+.sum {
+  background: #7b7e9f !important;
 }

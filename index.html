@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./js/css/bootstrap.min.css" />
   </head>
   <body>
-    <div class="calculatorBody">
+    <div class="calculatorBody m-auto mt-5">
       <table>
         <tr>
           <td>
@@ -17,40 +17,178 @@
           </td>
         </tr>
       </table>
-      <table>
+      <table class="rounded-bottom">
         <tr>
-          <td><input type="button" value="c" onclick="deleteMe()" /></td>
-          <td><input type="button" value="(" onclick="calculator('(')" /></td>
-          <td><input type="button" value=")" onclick="calculator(')')" /></td>
-          <td><input type="button" value="%" onclick="calculator('%')" /></td>
-        </tr>
-        <tr>
-          <td><input type="button" value="7" onclick="calculator('7')" /></td>
-          <td><input type="button" value="8" onclick="calculator('8')" /></td>
-          <td><input type="button" value="9" onclick="calculator('9')" /></td>
-          <td><input type="button" value="+" onclick="calculator('+')" /></td>
-        </tr>
-        <tr>
-          <td><input type="button" value="4" onclick="calculator('4')" /></td>
-          <td><input type="button" value="5" onclick="calculator('5')" /></td>
-          <td><input type="button" value="6" onclick="calculator('6')" /></td>
-          <td><input type="button" value="-" onclick="calculator('-')" /></td>
-        </tr>
-        <tr>
-          <td><input type="button" value="1" onclick="calculator('1')" /></td>
-          <td><input type="button" value="2" onclick="calculator('2')" /></td>
-          <td><input type="button" value="3" onclick="calculator('3')" /></td>
-          <td><input type="button" value="*" onclick="calculator('*')" /></td>
-        </tr>
-        <tr>
-          <td><input type="button" value="." onclick="calculator('.')" /></td>
           <td>
-            <input type="button" value="0" onclick="calculator('0')" />
+            <input
+              type="button"
+              value="c"
+              class="sum m-1 ms-2"
+              onclick="deleteMe()"
+            />
           </td>
           <td>
-            <input type="button" value="=" onclick="answer()" />
+            <input
+              type="button"
+              value="("
+              class="sum m-1"
+              onclick="calculator('(')"
+            />
           </td>
-          <td><input type="button" value="/" onclick="calculator('/')" /></td>
+          <td>
+            <input
+              type="button"
+              value=")"
+              class="sum m-1"
+              onclick="calculator(')')"
+            />
+          </td>
+          <td>
+            <input
+              type="button"
+              value="%"
+              class="sum m-1 me-2"
+              onclick="calculator('%')"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="button"
+              value="7"
+              class="m-1 ms-2"
+              onclick="calculator('7')"
+            />
+          </td>
+          <td>
+            <input
+              type="button"
+              value="8"
+              class="m-1"
+              onclick="calculator('8')"
+            />
+          </td>
+          <td>
+            <input
+              type="button"
+              value="9"
+              class="m-1"
+              onclick="calculator('9')"
+            />
+          </td>
+          <td>
+            <input
+              type="button"
+              value="+"
+              class="sum m-1 me-2"
+              onclick="calculator('+')"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="button"
+              value="4"
+              class="m-1 ms-2"
+              onclick="calculator('4')"
+            />
+          </td>
+          <td>
+            <input
+              type="button"
+              value="5"
+              class="m-1"
+              onclick="calculator('5')"
+            />
+          </td>
+          <td>
+            <input
+              type="button"
+              value="6"
+              class="m-1"
+              onclick="calculator('6')"
+            />
+          </td>
+          <td>
+            <input
+              type="button"
+              value="-"
+              class="sum m-1 me-2"
+              onclick="calculator('-')"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="button"
+              value="1"
+              class="m-1 ms-2"
+              onclick="calculator('1')"
+            />
+          </td>
+          <td>
+            <input
+              type="button"
+              value="2"
+              class="m-1"
+              onclick="calculator('2')"
+            />
+          </td>
+          <td>
+            <input
+              type="button"
+              value="3"
+              class="m-1"
+              onclick="calculator('3')"
+            />
+          </td>
+          <td>
+            <input
+              type="button"
+              value="*"
+              class="sum m-1 me-2"
+              onclick="calculator('*')"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="button"
+              value="."
+              class="m-1 ms-2"
+              onclick="calculator('.')"
+            />
+          </td>
+          <td>
+            <input
+              type="button"
+              value="0"
+              class="m-1"
+              onclick="calculator('0')"
+            />
+          </td>
+          <td>
+            <input
+              type="button"
+              value="="
+              class="m-1"
+              id="answer"
+              onclick="answer()"
+            />
+          </td>
+          <td>
+            <input
+              type="button"
+              value="/"
+              class="sum m-1 me-2"
+              id
+              onclick="calculator('/')"
+            />
+          </td>
         </tr>
       </table>
     </div>
